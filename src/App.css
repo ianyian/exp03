@@ -1,0 +1,48 @@
+/* General Styling */
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.App-header {
+  margin-top: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-gap: 10px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+  background-color: #f0f0f0;
+  border: 2px solid #ccc;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.square:hover {
+  background-color: #e0e0e0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.status {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.row {
+  display: flex;
+}
